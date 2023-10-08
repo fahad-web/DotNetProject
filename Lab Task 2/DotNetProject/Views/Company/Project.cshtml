@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Project";
+}
+
+
+<div class="mb-0   bg-black w-100 p-3">
+    <ul class="list-unstyled d-flex justify-content-evenly">
+        <li>
+            <a href="~/Company/Index">Company Home </a>
+        </li>
+        <li>
+            <a href="~/Company/Project">Project </a>
+        </li>
+        <li>
+            <a href="~/Company/Team">Team Members </a>
+        </li>
+
+    </ul>
+</div>
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<h2 class="text-center">Project</h2>
+
+
+<div>
+    <center>
+        <table class="text-center">
+            <thead>
+                <tr>
+                    <th class="w-25" s>Name</th>
+                    <th class="w-25">Client</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        @ViewBag.project1
+                    </td>
+                    <td>
+                        @ViewBag.client1
+                    </td>
+
+                    
+                </tr>
+                <tr>
+                    <td>
+                        @ViewBag.project2
+                    </td>
+                    <td>
+                        @ViewBag.client2
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @ViewBag.project3
+                    </td>
+                    <td>
+                        @ViewBag.client3
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </center>
+</div>
