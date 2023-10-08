@@ -37,6 +37,10 @@ namespace DotNetProject.Controllers
         [HttpPost]
         public ActionResult Sinup(Sinup sn)
         {
+            if(ModelState.IsValid)
+            {
+                return RedirectToAction("Index");
+            }
             return View(sn);
         }
 
